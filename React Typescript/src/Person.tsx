@@ -8,22 +8,24 @@ interface Person{
 }
 
 export const Person = (props: Person) => {
-    const [showInfo, setShowInfo] = useState<boolean | null>(false);
-    const toggleInfo = () => {
-      setShowInfo(prev => !prev);
+    const [bio, setBio] = useState<string | null>(null);
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setBio(e.target.value)
     }
+
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+    }
+
 
   return (
     <div>
-        {showInfo && (
-            <>
-                <p>Name: {props.name}</p>
-                <p>Age: {props.age}</p>
-                <p>This person is {props.isMarried ? "is married" : "is single"} </p>
-            </>
+        <p>Name: {props.name}</p>
+        <p>Age: {props.age}</p>
+        <p>This person is {props.isMarried ? "is married" : "is single"} </p>
         
-    )}
-    <button onClick={toggleInfo}>Toggle Info</button>
+    <p>{props.name} Bio: {bio === null ? "No Bio availabe" : bio}</p>
+    <input onChange={handleChange}/>
     </div>
   )}
 export default Person;
