@@ -17,8 +17,11 @@ const concantenateValues = (a:string,b: string): string => {
 }
 const result: string = concantenateValues("sam", "wanyua");
 console.log(result);
+
+// Creating my own type
+type IDField = string | number;
 // union
-const printId = (id: string | number | boolean | number[]) => {
+const printId = (id: IDField) => {
     console.log(`Your ID is: ${id}`);
 }
 
