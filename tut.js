@@ -14,7 +14,12 @@ const concantenateValues = (a, b) => {
 };
 const result = concantenateValues("sam", "wanyua");
 console.log(result);
+// union
 const printId = (id) => {
     console.log(`Your ID is: ${id}`);
 };
 printId("sdjds324");
+const signContract = (employee) => {
+    console.log(`Contract signed by ${employee.name} with a credit score of ${employee.creditScore}`);
+};
+signContract({ name: "Wanyua", creditScore: 8, id: 3242, email: "wanyua34@wanyua.com" });

@@ -26,3 +26,21 @@ const printId = (id: IDField) => {
 }
 
 printId("sdjds324");
+
+// Intersection in typescript
+interface BusinessPartner{
+    name: string,
+    creditScore: number,
+}
+
+interface UserIdentity{
+    id: number,
+    email: string,
+}
+
+type Employee = BusinessPartner & UserIdentity;
+const signContract = (employee: Employee) => {
+    console.log(`Contract signed by ${employee.name} with a credit score of ${employee.creditScore}`)
+}
+
+signContract({name: "Wanyua", creditScore: 8, id: 3242, email: "wanyua34@wanyua.com"})
