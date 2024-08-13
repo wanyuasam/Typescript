@@ -24,4 +24,6 @@ const printErrorMessage = (error:LoginError) => {
         console.log("We are experiencing an internal error!");
     }
 }
-printErrorMessage(LoginError.NoUser)
+printErrorMessage(LoginError.NoUser);
+
+
