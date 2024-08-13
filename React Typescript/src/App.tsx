@@ -1,5 +1,5 @@
 import './App.css'
-import {Person} from './Person'
+import {User} from './User'
 
 
 
@@ -9,11 +9,8 @@ function App() {
 
   return (
         <>
-          <Person name = {"Wesly"} age = {24} isMarried = {false} />
-          <Person name = {"Richard"} age = {56} isMarried = {true} />
-          <Person name = {"Richard"} age = {56} isMarried = {true} />
-          <Person name = {"Richard"} age = {56} isMarried = {true} />
-          <Person name = {"Richard"} age = {56} isMarried = {true} />
+          <User name = {"Wesly"} age = {24} isMarried = {false} />
+          <User name = {"Richard"} age = {56} isMarried = {true} />
         </>
   )
 }

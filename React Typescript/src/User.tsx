@@ -1,13 +1,13 @@
 import { useState } from "react";
 
 // interface
-interface Person{
+interface User{
     name: string
     age: number
     isMarried: boolean
 }
 
-export const Person = (props: Person) => {
+export const User = (props: User) => {
     const [bio, setBio] = useState<string | null>(null);
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setBio(e.target.value)
