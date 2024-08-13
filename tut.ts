@@ -12,7 +12,7 @@ let xArr: any[] = ["Pedro", 0, true];
 
 
 // defining a function
-const concantenateValues = (a:string,b: string) => {
+const concantenateValues = (a:string,b: string): string => {
     return a + b;
 }
 const result: string = concantenateValues("sam", "wanyua");
