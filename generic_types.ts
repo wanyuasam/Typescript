@@ -7,9 +7,14 @@ class StorageContainer<T>{
    }
 
    addItem(item:T) : void{
-    this.contents.push();
+    this.contents.push(item);
    }
    getItem(index: number): T | undefined{
-    return this.contents[index]
+    return this.contents[index];
    }
 }
+
+const userNames = new StorageContainer<string>();
+userNames.addItem("George");
+userNames.addItem("Bush");
+console.log(userNames.getItem(0));
