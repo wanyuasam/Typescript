@@ -17,8 +17,8 @@ const concantenateValues = (a:string,b: string): string => {
 }
 const result: string = concantenateValues("sam", "wanyua");
 console.log(result);
-
-const printId = (id: any) => {
+// union
+const printId = (id: string | number | boolean | number[]) => {
     console.log(`Your ID is: ${id}`);
 }
 
