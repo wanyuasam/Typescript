@@ -13,6 +13,10 @@ export const Person = (props: Person) => {
         setBio(e.target.value)
     }
 
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+    }
+
 
   return (
     <div>
