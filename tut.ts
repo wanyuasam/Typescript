@@ -39,7 +39,7 @@ interface UserIdentity{
 }
 
 type Employee = BusinessPartner & UserIdentity;
-const signContract = (employee: Employee) => {
+const signContract = (employee: Employee): void => {
     console.log(`Contract signed by ${employee.name} with a credit score of ${employee.creditScore}`)
 }
 
