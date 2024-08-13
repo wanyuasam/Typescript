@@ -17,3 +17,9 @@ const concantenateValues = (a:string,b: string): string => {
 }
 const result: string = concantenateValues("sam", "wanyua");
 console.log(result);
+
+const printId = (id: any) => {
+    console.log(`Your ID is: ${id}`);
+}
+
+printId("sdjds324");
