@@ -15,7 +15,6 @@ export const Person = (props: Person) => {
 
   return (
     <div>
-        <button onClick={toggleInfo}>Toggle Info</button>
         {showInfo && (
             <>
                 <p>Name: {props.name}</p>
@@ -23,7 +22,8 @@ export const Person = (props: Person) => {
                 <p>This person is {props.isMarried ? "is married" : "is single"} </p>
             </>
         
-        )}
+    )}
+    <button onClick={toggleInfo}>Toggle Info</button>
     </div>
   )}
 export default Person;
